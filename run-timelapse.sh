@@ -2,7 +2,7 @@
 
 CURRENT_TIME=$(date +"%m-%d-%Y-%H-%M")
 DIR="${1:-/home/pi/Time-Lapses/$CURRENT_TIME}" #Name for a folder with today's date and time. All pictures from the time-lapse will be saved here. 
-INTERVAL=${2:-2m} #Time between rounds
+INTERVAL=${2:-2} #Time between rounds
 index=1
 
 
@@ -41,7 +41,7 @@ while true; do
 	echo "Completed Round $index in $run_time seconds"
 	index=$((index + 1))
 
-	DELAY=$((($INTERVAL*60)-$run_time))
+	DELAY=$(($INTERVAL-$run_time))
 	echo "Starting next round in $DELAY seconds"
 	sleep "$DELAY"
 done
