@@ -34,7 +34,7 @@ while true; do
 	#Clean up files
 	rm "$SCRIPT_DIR/project.mk"
 	rm "$SCRIPT_DIR/project.pto"
-	find “$SCRIPT_DIR” -name “*.tif” -delete
+	find "$SCRIPT_DIR" -name "*.tif" -delete
 
 
 	end_time=$(date +%s)
