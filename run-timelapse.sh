@@ -34,7 +34,8 @@ while true; do
 	#Clean up files
 	rm "$SCRIPT_DIR/project.mk"
 	rm "$SCRIPT_DIR/project.pto"
-	find . -name '$SCRIPT_DIR/*.tiff' -delete
+	find “$SCRIPT_DIR” -name “*.tif” -delete
+
 
 	end_time=$(date +%s)
 	run_time=$(($end_time-$start_time)) #Calculate run time for that round
