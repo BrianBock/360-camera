@@ -34,6 +34,7 @@ while true; do
 	#Clean up files
 	rm "$SCRIPT_DIR/project.mk"
 	rm "$SCRIPT_DIR/project.pto"
+	rm "$SCRIPT_DIR/project.pto_$slug.arg"
 	find "$SCRIPT_DIR" -name "*.tif" -delete
 
 
