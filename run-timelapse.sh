@@ -41,7 +41,7 @@ while true; do
 	echo "Completed Round $index in $run_time seconds"
 	index=$((index + 1))
 
-	DELAY=$(($INTERVAL-$run_time))
+	DELAY=$((($INTERVAL*60)-$run_time))
 	echo "Starting next round in $DELAY seconds"
 	sleep "$DELAY"
 done
