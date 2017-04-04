@@ -32,6 +32,7 @@ while true; do
 	mv $slug.tif "$DIR/tifs/$slug.tif"
 
 	#Clean up files
+	echo "Cleaning up temporary files"
 	rm "$SCRIPT_DIR/project.mk"
 	rm "$SCRIPT_DIR/project.pto"
 	rm "$SCRIPT_DIR/project.pto_$slug.arg"
