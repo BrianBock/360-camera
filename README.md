@@ -49,4 +49,4 @@ You can run a time-lapse for however long you'd like. When you are finished, cop
 
 
 
-#### Learn more about this project at [http://dcc.umd.edu/portfolio/bbock/](http://dcc.umd.edu/portfolio/bbock/).
+#### Learn more about this project at [http://ter.ps/360Camera](http://ter.ps/360Camera).
